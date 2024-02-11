@@ -1,1 +1,1 @@
-# ercot-batteries-analysis-dashboard
+# Ercot Batteries Analysis Dashboard
