@@ -15,8 +15,6 @@ DICT_COLORS = {
 
 FIG_SIZE = (10, 3)
 
-
-
 def get_data():
     """Load data from feather files. We also parse the dates to datetime format."""
     path = "./data"
@@ -185,7 +183,7 @@ def plot_data_against_battery(df_as, column_name, unit):
     plt.setp(ax.xaxis.get_majorticklabels(), rotation=75)
     return fig
 
-
+@st.cache
 def df_all_revenues(dfs):
     df_revenue_as_total = get_df_as_revenues(dfs)
     df_revenue_energy_total = get_df_energy_revenues(dfs)
